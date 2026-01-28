@@ -1,0 +1,15 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Secrets and Credentials
+.env
+
+# dbt specific
+target/
+dbt_packages/
+logs/
+
+# Mac specific
+.DS_Store
