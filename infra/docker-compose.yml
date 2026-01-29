@@ -54,7 +54,7 @@ services:
   airflow-webserver:
     image: apache/airflow:2.9.3
     env_file:
-      - ./infra/.env
+      - .env
     container_name: airflow-webserver
     restart: always
     depends_on:
@@ -74,7 +74,7 @@ services:
   airflow-scheduler:
     image: apache/airflow:2.9.3
     env_file:
-      - ./infra/.env
+      - .env
     container_name: airflow-scheduler
     restart: always
     depends_on:

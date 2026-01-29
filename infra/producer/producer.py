@@ -2,9 +2,12 @@ import time
 import json 
 import requests
 from kafka import KafkaProducer
+import os
+from dotenv import load_dotenv
 
 
-API_KEY = "d5q9oq9r01qq2b6bbahgd5q9oq9r01qq2b6bbai0" # this has to be put inside env
+load_dotenv()
+API_KEY = os.getenv("FINNHUB_API_KEY")
 BASE_URL = "https://finnhub.io/api/v1/quote"
 SYMBOLS = ["AAPL", "MSFT", "TSLA", "GOOGL", "AMZN"]
 
