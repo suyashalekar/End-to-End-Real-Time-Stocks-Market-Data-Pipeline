@@ -128,7 +128,7 @@ real-time-stocks-pipeline/
 ---
 
 ### **7. Power BI Dashboard**
-![alt text](images/image.png)
+![alt text](infra/images/image.png)
 - Connected **Power BI** to Snowflake (Gold layer) using **Direct Query**.
 - Built:
   - **Candlestick chart** → stock market patterns  
